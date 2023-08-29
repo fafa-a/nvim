@@ -12,4 +12,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup("plugins")
 
- vim.cmd.colorscheme 'rose-pine-dawn'
+vim.notify = require("notify")
+vim.notify("Core & Plugins loaded",  "info",{title = "Setup complete"})
+
+vim.cmd.colorscheme 'rose-pine-dawn'

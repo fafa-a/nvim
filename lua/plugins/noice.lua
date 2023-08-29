@@ -13,7 +13,7 @@ return {
             }
         },
         notify = {
-            enabled = true,
+            enabled = false,
             view = 'notify'
         },
         -- you can enable a preset for easier configuration
