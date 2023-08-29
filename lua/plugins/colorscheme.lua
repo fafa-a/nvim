@@ -14,8 +14,12 @@ return { {
     as = "rose-pine",
     config = function()
         require("rose-pine").setup({
-            disable_background = false
-        })
+            disable_background = true,
+                groups ={
+                    border = "",
+                    panel = "",
+                },
+            })
     end
 }, { "frenzyexists/aquarium-vim" }, { "olimorris/onedarkpro.nvim" }, { "ramojus/mellifluous.nvim" }, {
     'maxmx03/fluoromachine.nvim',

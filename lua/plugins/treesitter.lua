@@ -18,7 +18,6 @@ return { -- Highlight, edit, and navigate code
                 enable = true
             },
 
-
             highlight = {
                 enable = true
             },
