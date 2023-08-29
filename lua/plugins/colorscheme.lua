@@ -5,7 +5,7 @@ return { {
         local catppuccin = require("catppuccin")
 
         catppuccin.setup({
-            flavour = "macchiato",
+            flavour = "latte",
             transparent_background = true
         })
     end,
@@ -14,7 +14,7 @@ return { {
     as = "rose-pine",
     config = function()
         require("rose-pine").setup({
-            disable_background = true
+            disable_background = false
         })
     end
 }, { "frenzyexists/aquarium-vim" }, { "olimorris/onedarkpro.nvim" }, { "ramojus/mellifluous.nvim" }, {

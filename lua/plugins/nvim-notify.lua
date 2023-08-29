@@ -11,13 +11,14 @@ return {
         desc = "Dismiss all Notifications"
     }},
     opts = {
-        timeout = 3000,
+        timeout = 2000,
         max_height = function()
             return math.floor(vim.o.lines * 0.75)
         end,
         max_width = function()
             return math.floor(vim.o.columns * 0.75)
-        end
+        end,
+        background_colour = "#FF086F",
     },
     init = function()
         -- when noice is not enabled, install notify on VeryLazy
@@ -27,5 +28,5 @@ return {
         vim.notify = require("notify")
         --   end)
         -- end
-    end
+    end,
 }
