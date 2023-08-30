@@ -15,4 +15,4 @@ require('lazy').setup("plugins")
 vim.notify = require("notify")
 vim.notify("Core & Plugins loaded",  "info",{title = "Setup complete"})
 
-vim.cmd.colorscheme 'rose-pine-dawn'
+vim.cmd.colorscheme 'onenord-light'

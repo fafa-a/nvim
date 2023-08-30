@@ -1,4 +1,3 @@
-print('LOADING BASE.LUA')
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -80,11 +79,12 @@ vim.diagnostic.config {
 }
 
 -- Set background blurry
--- vim.api.nvim_command([[
---      augroup ChangeBackgroudColour
---        autocmd colorscheme * :hi normal guibg=#0d1926b8
---      augroup END
--- ]])
+-- autocmd colorscheme * :hi normal guibg=#0d1926b8
+ vim.api.nvim_command([[
+      augroup ChangeBackgroudColour
+        autocmd colorscheme * :hi normal guibg=#00000033
+      augroup END
+ ]])
 
 -- Set colorscheme
 opt.termguicolors = true
