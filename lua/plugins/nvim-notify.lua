@@ -19,6 +19,8 @@ return {
             return math.floor(vim.o.columns * 0.75)
         end,
         background_colour = "#00000033",
+        render = "compact",
+        level = "warn",
     },
     init = function()
         -- when noice is not enabled, install notify on VeryLazy

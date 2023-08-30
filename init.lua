@@ -13,6 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup("plugins")
 
 vim.notify = require("notify")
-vim.notify("Core & Plugins loaded",  "info",{title = "Setup complete"})
+vim.notify("Core & Plugins loaded",  "warn",{title = "Setup complete"})
 
 vim.cmd.colorscheme 'onenord-light'
