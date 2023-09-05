@@ -105,8 +105,9 @@ vim.api.nvim_set_var("filetype", "plugin")
 vim.cmd("syntax on")
 vim.g.vimwiki_list = {
   {
-    path = "~/documents/notes/",
+    path = "~/Documents/notes/",
     syntax = "markdown",
     ext = ".md"
   }
 }
+
