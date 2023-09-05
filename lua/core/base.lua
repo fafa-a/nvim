@@ -98,3 +98,15 @@ local home = os.getenv 'HOME'
 local backupDir = home .. '/.nvim/tmp/'
 vim.opt.directory = backupDir
 opt.undofile = true
+
+-- vimwiki
+opt.compatible = false
+vim.api.nvim_set_var("filetype", "plugin")
+vim.cmd("syntax on")
+vim.g.vimwiki_list = {
+  {
+    path = "~/documents/notes/",
+    syntax = "markdown",
+    ext = ".md"
+  }
+}
