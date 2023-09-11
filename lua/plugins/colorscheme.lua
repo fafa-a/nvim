@@ -15,11 +15,11 @@ return { {
     config = function()
         require("rose-pine").setup({
             disable_background = true,
-                groups ={
-                    border = "",
-                    panel = "",
-                },
-            })
+            groups = {
+                border = "",
+                panel = "",
+            },
+        })
     end
 }, { "frenzyexists/aquarium-vim" }, { "olimorris/onedarkpro.nvim" }, { "ramojus/mellifluous.nvim" }, {
     'maxmx03/fluoromachine.nvim',
@@ -40,5 +40,6 @@ return { {
     config = function()
         -- your optional config goes here, see below.
     end
-}, { 'rmehri01/onenord.nvim' }, { 'Mofiqul/vscode.nvim' }, { 'nyoom-engineering/oxocarbon.nvim' },
-    { 'humanoid-colors/vim-humanoid-colorscheme' } }
+},
+    { 'rmehri01/onenord.nvim' }, { 'Mofiqul/vscode.nvim' }, { 'nyoom-engineering/oxocarbon.nvim' },
+    { 'humanoid-colors/vim-humanoid-colorscheme' },{'folke/tokyonight.nvim'} }
