@@ -14,6 +14,5 @@ require('lazy').setup("plugins")
 
 vim.notify = require("notify")
 vim.notify("Core & Plugins loaded",  "warn",{title = "Setup complete"})
-vim.opt.background = "light" -- default to dark or light style
-vim.g.material_style = 'lighter'
-vim.cmd.colorscheme 'material'
+-- vim.opt.background = "light" -- default to dark or light style
+vim.cmd.colorscheme 'github_light_high_contrast'
