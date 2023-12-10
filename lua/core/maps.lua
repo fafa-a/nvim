@@ -14,14 +14,11 @@ map('n', '<C-s>', ':w<CR>', { silent = true })
 
 -- hanldes escape key & fixed copilot suggestion
 map('i', '<C-c>', '<Esc>')
--- map("n", "<C-s>", ":w<CR>:Format<CR>", { silent = true })
-
--- close current buffer
-map('n', '<leader>c', ':bd<CR>', { silent = true })
 
 -- buffer navigation
-map('n', '<S-b>', ':bprev<CR>', { silent = true })
-map('n', '<S-n>', ':bnext<CR>', { silent = true })
+--map('n', '<S-b>', ':bprev<CR>', { silent = true })
+--map('n', '<S-n>', ':bnext<CR>', { silent = true })
+
 --disable arrow keys
 map('n', '<up>', '<nop>', { silent = true })
 map('n', '<down>', '<nop>', { silent = true })

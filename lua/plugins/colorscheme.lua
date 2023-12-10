@@ -41,8 +41,8 @@ return { {
         -- your optional config goes here, see below.
     end
 },
-    { 'rmehri01/onenord.nvim' }, { 'Mofiqul/vscode.nvim' }, { 'nyoom-engineering/oxocarbon.nvim' },
-    { 'humanoid-colors/vim-humanoid-colorscheme' }, {
+    { 'rmehri01/onenord.nvim' },  { 'nyoom-engineering/oxocarbon.nvim' },
+     {
     'folke/tokyonight.nvim',
     config = function()
         require("tokyonight").setup({
@@ -107,10 +107,7 @@ return { {
                 hide_inactive_statusline = false, -- Hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
                 dim_inactive = false, -- dims inactive windows
                 lualine_bold = true,  -- Lualine headers will be bold or regular.
-                lualine_style = "light", -- "dark", "light" or "default" (Follows dark/light style)
-
-                --- You can override specific color/highlights. Current values in `extras/palettes`
-
+                lualine_style = "light", -- "dark", "lig"
                 ---@param colors ColorScheme
                 on_colors = function(colors)
                     colors.border = colors.grey
@@ -141,29 +138,29 @@ return { {
             styles = { -- Give comments style such as bold, italic, underline etc.
                 comments = { italic = true },
                 strings = { --[[ bold = true ]] },
-                keywords = { --[[ underline = true ]] },
+                keywords = {  underline = true  },
                 functions = { bold = true, --[[undercurl = true]] },
-                variables = {},
+                variables = { italic = true },
                 operators = {},
-                types = {},
+                types = {bold = true},
             },
 
             plugins = { -- Uncomment the plugins that you use to highlight them
                 -- Available plugins:
-                -- "dap",
-                -- "dashboard",
+                "dap",
+                "dashboard",
                 "gitsigns",
-                -- "hop",
+                "hop",
                 "indent-blankline",
                 "lspsaga",
-                -- "mini",
-                -- "neogit",
-                -- "neorg",
+                "mini",
+                "neogit",
+                 "neorg",
                 "nvim-cmp",
-                -- "nvim-navic",
+                "nvim-navic",
                 "nvim-tree",
                 "nvim-web-devicons",
-                -- "sneak",
+                "sneak",
                 "telescope",
                 "trouble",
                 "which-key",
@@ -178,7 +175,7 @@ return { {
             },
 
             high_visibility = {
-                lighter = true, -- Enable higher contrast text for lighter style
+                lighter = false, -- Enable higher contrast text for lighter style
                 darker = false -- Enable higher contrast text for darker style
             },
 
@@ -191,7 +188,7 @@ return { {
             custom_highlights = {}, -- Overwrite highlights with your own
         })
     end
-}, { 'ayu-theme/ayu-vim' }, {
+},  {
     'projekt0n/github-nvim-theme',
     config = function()
         require('github-theme').setup({
@@ -238,4 +235,5 @@ return { {
             groups = {},
         })
     end
-} }
+},
+}

@@ -20,9 +20,9 @@ return {
             rust = {'rustfmt'},
             python = {'black'}
         }
-        vim.g.ale_linters = {
-            rust = {'cargo'}
-        }
+        -- vim.g.ale_linters = {
+        --     rust = {'cargo'}
+        -- }
         vim.g.ale_fix_on_save = 1
         vim.g.ale_linters_explicit = 1
     end

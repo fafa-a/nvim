@@ -80,15 +80,15 @@ vim.diagnostic.config {
 
 -- Set background blurry
 -- autocmd colorscheme * :hi normal guibg=#0d1926b8
- vim.api.nvim_command([[
-      augroup ChangeBackgroudColour
-        autocmd colorscheme * :hi normal guibg=#00000033
-      augroup END
- ]])
+ -- vim.api.nvim_command([[
+ --      augroup ChangeBackgroudColour
+ --        autocmd colorscheme * :hi normal guibg=#00000033
+ --      augroup END
+ -- ]])
 
 -- Set colorscheme
 opt.termguicolors = true
-opt.background = 'light'
+-- opt.background = 'light'
 
 
 -- -- set back up and swap file directory
