@@ -69,6 +69,7 @@ opt.splitright = true
 
 opt.termguicolors = true
 opt.background = 'light'
+
 -- test indent linebreak
 opt.breakindent = true
 vim.opt.showbreak = string.rep(' ', 3) -- Make it so that long lines wrap smartly

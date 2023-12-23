@@ -11,6 +11,7 @@ map('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- format and save
 map('n', '<C-s>', ':w<CR>', { silent = true })
+map('i', '<C-s>', '<Esc>:w<CR>', { silent = true })
 
 -- hanldes escape key & fixed copilot suggestion
 map('i', '<C-c>', '<Esc>')
@@ -30,3 +31,11 @@ map('n', '<C-j>', '<C-w>j', { silent = true })
 map('n', '<C-k>', '<C-w>k', { silent = true })
 map('n', '<C-l>', '<C-w>l', { silent = true })
 map('n', '<C-h>', '<C-w>h', { silent = true })
+
+-- indent in visual modes
+map('v', '<', '<gv', { silent = true })
+map('v', '>', '>gv', { silent = true })
+
+-- moove selected text up and down
+map('v', 'J', ":m '>+1<CR>gv=gv", { silent = true })
+map('v', 'K', ":m '<-2<CR>gv=gv", { silent = true })
