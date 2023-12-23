@@ -68,7 +68,7 @@ return { -- LSP Configuration & Plugins
             -- clangd = {},
             -- gopls = {},
             -- pyright = {},
-            rust_analyzer = {},
+            -- rust_analyzer = {},
             -- tsserver = {},
 
             lua_ls = {
@@ -101,6 +101,10 @@ return { -- LSP Configuration & Plugins
         }
 
         mason_lspconfig.setup_handlers {function(server_name)
+            if server_name == 'rust_analyzer' then
+                return
+            end
+
             require('lspconfig')[server_name].setup {
                 capabilities = capabilities,
                 on_attach = on_attach,
