@@ -1,1 +1,1 @@
-return {"vimwiki/vimwiki",event ="VeryLazy"}
+return { "vimwiki/vimwiki", event = "VeryLazy" }

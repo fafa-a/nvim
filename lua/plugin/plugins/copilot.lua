@@ -44,10 +44,10 @@ return {
                 server_opts_overrides = {}
             })
             vim.keymap.set('i', '<tab>', function()
-              require('copilot.suggestion').accept()
-              -- Put cursor on next line.
-              vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<End>', true, false, true), 'n', false)
-              end, { desc = '[copilot] accept suggestion', silent = true })
+                require('copilot.suggestion').accept()
+                -- Put cursor on next line.
+                vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('<End>', true, false, true), 'n', false)
+            end, { desc = '[copilot] accept suggestion', silent = true })
         end, 100)
     end
 }
