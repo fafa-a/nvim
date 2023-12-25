@@ -1,1 +1,1 @@
-return { { 'Galooshi/vim-import-js', event = "VeryLazy" } }
+return { { 'Galooshi/vim-import-js', event = 'VeryLazy' } }
