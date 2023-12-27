@@ -1,6 +1,6 @@
 return {
-  "echasnovski/mini.bufremove",
-  event = "BufReadPost",
+  'echasnovski/mini.bufremove',
+  event = 'BufReadPost',
   -- stylua: ignore
   keys = {
     { "<leader>bd", function() require("mini.bufremove").delete(0, false) end, desc = "Delete Buffer" },

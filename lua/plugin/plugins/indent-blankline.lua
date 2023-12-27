@@ -1,14 +1,14 @@
 local highlight = {
-    "CursorColumn",
-    "Whitespace",
+  'CursorColumn',
+  'Whitespace',
 }
 return { -- Add indentation guides even on blank lines
-    'lukas-reineke/indent-blankline.nvim',
-    -- Enable `lukas-reineke/indent-blankline.nvim`
-    -- See `:help indent_blankline.txt`
-    main = "ibl",
-    opts = {
-       indent = { char = "|" },
-    },
-    event = "VeryLazy",
+  'lukas-reineke/indent-blankline.nvim',
+  -- Enable `lukas-reineke/indent-blankline.nvim`
+  -- See `:help indent_blankline.txt`
+  main = 'ibl',
+  opts = {
+    indent = { char = '|' },
+  },
+  event = 'VeryLazy',
 }

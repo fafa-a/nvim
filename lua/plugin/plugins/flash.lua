@@ -1,7 +1,7 @@
 return {
-    "folke/flash.nvim",
-    event = "VeryLazy",
-    opts = {},
+  'folke/flash.nvim',
+  event = 'VeryLazy',
+  opts = {},
     -- stylua: ignore
     keys = {{
         "s",
@@ -39,4 +39,5 @@ return {
         end,
         desc = "Toggle Flash Search"
     }}
+,
 }
