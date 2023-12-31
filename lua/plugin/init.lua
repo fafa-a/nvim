@@ -12,3 +12,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup 'plugin.plugins'
+vim.notify('Lazy plugins', 'warn', { title = 'Plugins loaded' })

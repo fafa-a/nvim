@@ -16,4 +16,5 @@ end
 
 mason_registry.refresh(vim.schedule_wrap(ensure_installed))
 
+vim.notify('Mason LSP', 'warn', { title = 'Linter & formatter loaded' })
 require 'plugin.mason.lsp'

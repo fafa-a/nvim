@@ -27,7 +27,7 @@ local servers = {
   yamlls = {},
 }
 
-local servers_exclude = { rust_analyzer }
+local servers_exclude = { rust_analyzer = {} }
 
 return {
   servers = servers,

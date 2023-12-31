@@ -31,3 +31,4 @@ mason_lspconfig.setup_handlers {
     }
   end,
 }
+vim.notify('Mason LSP', 'warn', { title = 'Language LSP loaded' })

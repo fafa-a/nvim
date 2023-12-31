@@ -2,7 +2,6 @@ local utils = require 'core.utils'
 local LspUI = utils.requireAndTrack 'LspUI'
 local map = utils.map
 LspUI.setup()
-
 map('n', '<leader>rn', '<cmd>LspUI rename<CR>')
 map('n', '<leader>ca', '<cmd>LspUI code_action<CR>')
 map('n', 'gd', '<cmd>LspUI definition<CR>')
